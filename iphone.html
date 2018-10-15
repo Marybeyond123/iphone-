@@ -1,0 +1,752 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>ipone官网</title>
+	<link rel="stylesheet" href="./css/common.css">
+	<link rel="stylesheet" href="./font-awesome-4.7.0/css/font-awesome.css">
+	<style>
+		html,body{
+			margin: 0;
+			padding:0;
+		}
+		div.contenter>.ad{
+			background-color: #444444;
+			height: 40px;
+			width: 100%;
+		}
+		div.contenter>.ad>h2{
+			width:900px;
+			font-size: 12px;
+			color: #cccccc;
+			text-align: right;
+			margin: 0 auto;
+			line-height: 40px;
+		}
+      div.nav{
+      	background-color: #333333;
+      	height: 45px;
+      }
+      div.nav>ul{
+      	height: 45px;
+      	margin: 0 auto;
+      	width: 900px;
+      }
+      div.nav>ul>li{
+      	line-height: 40px;
+      	width:100px;
+      	float: left;
+      	text-align: right;
+      }
+      div.nav>ul>li a{
+      	color: #ffffff;
+      }
+       div.nav>ul>li a:hover{
+        color:#cccccc;
+       }
+       div.iphonex,
+       div.ipad,
+       div.mac
+       {
+       	width: 1350px;
+       	height: 570px;
+       	background-color:#fafafa;
+       	margin:0 auto;
+       }
+       div.iphonex-top>ul,
+       div.ipad-top>ul,
+       div.mac-top>ul
+       {
+       	float: left;
+       }
+     div.iphonex-top>ul>li:first-child,
+     div.ipad-top>ul>li:first-child,
+     div.mac-top>ul>li:first-child
+     {
+     	font-size: 56px;
+     	font-weight: bold;
+     	text-align: center;
+     	margin-top:80px;
+     	width: 1350px;
+     }
+      div.iphonex-top>ul>li:nth-child(2),
+      div.ipad-top>ul>li:nth-child(2),
+      div.mac-top>ul>li:nth-child(2)
+      {
+     	font-size: 20px;
+     	text-align: center;
+     	width: 1350px;
+     }
+     div.iphonex-top::after,
+     div.ipad-top::after,
+     div.mac-top::after
+     {
+     	content: "";
+     	display: block;
+     	clear: both;
+     }
+      div.iphonex-body>ul>li,
+      div.ipad-body>ul>li,
+      div.mac-body>ul>li
+      {
+      	float: left;
+      	margin-top: 20px;
+      	color: blue;
+      }
+    div.iphonex-body>ul>li:nth-child(1),
+    div.ipad-body>ul>li:nth-child(1),
+    div.mac-body>ul>li:nth-child(1)
+    {
+	      width: 680px;
+	      height: 45px;
+	     text-align:right;
+   }
+   div.iphonex-body>ul>li:nth-child(2),
+   div.ipad-body>ul>li:nth-child(2),
+   div.mac-body>ul>li:nth-child(2)
+   {
+	       width: 600px;
+	      height: 45px;
+	      text-align: left;
+	      margin-left: 30px;
+   }
+   div.iphonex-body>ul>li>a,
+   div.ipad-body>ul>li>a,
+   div.mac-body>ul>li>a
+   {
+    	color: blue;
+	    font-size: 16px;
+   }
+   div.iphonex-body>ul>li>a:hover,
+   div.ipad-body>ul>li>a:hover,
+   div.mac-body>ul>li>a:hover
+   {
+       	text-decoration: underline;
+       }
+    div.iphonex-body::after,
+    div.ipad-body::after,
+    div.mac-body::after
+    {
+ 	content: "";
+ 	display: block;
+ 	clear: both;
+     }
+     .iphonex-footer,
+     .ipad-footer,
+     .mac-footer
+     {
+     	height: 300px;
+     	width: 1000px;
+     	margin:0 auto;
+     }
+     div.ipad{
+     	background-color:#f5f5f5;
+     }
+     div.mac{
+     	background-color: #131218;
+     }
+     div.mac-top>ul>li>a,
+     div.mac-top>ul>li>a,
+     div.mac-body>ul>li>a,
+      div.mac-body>ul>li{
+        color: #ffffff;
+      }
+      div.content,
+      div.content2,
+      div.content3
+      {
+      	width: 1350px;
+      	height: 684px;
+      	margin: 0 auto;
+      }
+      div.content-left,
+      div.content2-left,
+      div.content3-left
+      {
+      	box-sizing: border-box;
+      	margin:7px;
+      	width: 661px;
+      	height: 670px;
+      	background-image: url(./images/shop.jpg);
+      	background-repeat: round;
+      	float: left;
+
+      }
+      div.content-right    
+      {
+      	box-sizing: border-box;
+      	margin:7px;
+      	width: 661px;
+      	height: 670px;
+      	background-image: url(./images/mac.jpg);
+      	background-repeat: round;
+      	float: right;
+      }
+       div.content-left1,
+       div.content-right1,
+       {
+          display: block;
+          width: 663px;
+      	  height: 670px;
+       }
+       div.content-left>ul>li:first-child,
+       div.content-right>.content-right1>ul>li:first-child
+       {
+       	font-size: 38px;
+       	font-weight: 550;
+       	text-align: center;
+		    margin-top: 50px;
+       }
+       div.content-left>ul>li:nth-child(2)
+       {
+		   margin-top: 10px;
+       	font-size: 20px;
+       	text-align: center;
+       }
+       div.content-right>.content-right1>ul>li:first-child
+       {
+       	margin-top: 520px;
+       	color: #fffcfc;
+       }
+       div.content-right2{
+       	background-color: red;
+       }
+        div.content-right2>ul {
+        	width: 260px;
+        	margin: 0 auto;
+        }
+       div.content-right2>ul>li{
+       	   color: #fffcfc;
+       	   float: left;
+       	   width: 130px;
+       	   height: 60px;
+       	   margin: 0 auto;
+       	margin-top:20px;
+       }
+       div.content-right2>ul>li>a
+       {
+           font-size: 14px;
+       	   color: #fffcfc;
+       	   text-align: center;
+       }
+       div.content-right2>ul>li:nth-child(1)>a
+       {
+       	width: 100px;
+       	float: left;
+       	font-size: 16px;
+       }
+
+       div.content-right2>ul>li:nth-child(2)>a
+       {
+       	width: 100px;
+       	float: left;
+       	font-size: 16px;
+       }
+        div.content-right2>ul>li>a:hover{
+        	text-decoration: underline;
+        }
+	  .content-right2 {
+	  	content: "";
+     	display: block;
+     	clear: both;
+	  }
+      div.content2-left
+	  {
+	  	background-image: url(./images/iphone_x_a11.jpg);
+	  }
+      div.content2-left>ul>li:first-child,
+      div.content3-left>ul>li:first-child,
+      div.content3-right>ul>li:first-child
+       {
+        font-size: 38px;
+        font-weight: 550;
+        text-align: center;
+        margin-top: 470px;
+        color:  #fffcfc;
+       }
+      div.content2-left>ul>li:nth-child(2),
+      div.content3-left>ul>li:nth-child(2),
+      div.content3-right>ul>li:nth-child(2)
+      {
+          font-size: 18px;
+          color: #fffcfc;
+          text-align: center;
+          margin-top: 10px;
+      }
+      div.content2-left>ul li:nth-child(3)
+      {
+        width: 100px;
+        height: 50px;
+        text-align: center;
+        margin: 0 auto;
+        line-height: 50px;
+        color: #fffcfc;
+      }
+      div.content2-left>ul>li:nth-child(3)>a
+      {
+        color: #fffcfc;
+        font-size: 16px;
+        margin: 10px;
+      }
+      div.content2-left>ul>li:nth-child(3)>a:hover{
+        text-decoration: underline;
+      }
+
+      div.content3-left{
+        background-image: url(./images/4.jpg);
+    }
+      div.content3-left>ul>li:first-child
+     {
+      margin-top: 100px;
+      color: #000;
+     }
+     div.content3-left>ul>li:nth-child(2){
+      color: #000;
+     }
+       div.content2-right1
+       {
+        width: 661px;
+        margin:0 auto;
+       }
+       div.content2-right1>ul
+       {
+        float: left;
+       }
+     div.content2-right1>ul>li:first-child
+     {
+      font-size: 40px;
+      font-weight: bold;
+      text-align: center;
+      margin-top:80px;
+      width: 661px;
+     }
+      div.content2-right1>ul>li:nth-child(2)
+      {
+      font-size: 18px;
+      text-align: center;
+      width: 661px;
+     }
+     div.content2-right1::after
+     {
+      content: "";
+      display: block;
+      clear: both;
+     }
+     div.content2-right2{
+      float: left;
+     }
+      div.content2-right2>ul>li
+      {
+        float: left;
+        margin-top: 20px;
+        color: blue;
+      }
+    div.content2-right2>ul>li:nth-child(1)
+    {
+        width: 330px;
+        height: 45px;
+       text-align:right;
+   }
+   div.content2-right2>ul>li:nth-child(2)
+   {
+         width:300px;
+        height: 45px;
+        text-align: left;
+        margin-left: 30px;
+   }
+   div.content2-right2>ul>li>a
+   {
+      color: blue;
+      font-size: 16px;
+   }
+   div.content2-right2>ul>li>a:hover
+   {
+        text-decoration: underline;
+       }
+    div.content2-right2::after
+    {
+  content: "";
+  display: block;
+  clear: both;
+     }
+     div.content2-right,
+     div.content3-right
+     {
+        box-sizing: border-box;
+        margin:7px;
+        width: 661px;
+        height: 670px;
+        background-color:#f9f0eb;
+        float: right;
+
+     }
+     .content2-right3>img
+     {
+      height:445px;
+      width: 400px;
+      margin-left: 100px;
+     }
+     div.content3-right
+     {
+        background-color:#000;
+     }
+      div.content3-right>ul>li:first-child
+      {
+        margin-top: 100px;
+      }
+      div.content3-right>ul>li:nth-child(3)
+      {
+        margin:60px 200px 200px 200px;
+      }
+     div.catalague-bg{
+      background-color: #ededed;
+      width:1350px;
+      height: 500px;
+      margin: 0 auto;
+      position: relative;
+     }
+     ul.catalague-content1,
+     ul.catalague-content2,
+     ul.catalague-content3,
+     ul.catalague-content4,
+     ul.catalague-content5
+     {
+         height: 400px;
+         position: absolute;
+         left: 120px;
+         top: 40px;
+         right: 0;
+         bottom: 0;
+         line-height: 35px;
+     }
+      ul.catalague-content1>li,
+      ul.catalague-content2>li,
+      ul.catalague-content3>li,
+      ul.catalague-content4>li,
+      ul.catalague-content5>li
+      {
+        height:35px;
+      font-size: 12px;
+
+      }
+      ul.catalague-content1>li>a,
+      ul.catalague-content2>li>a,
+      ul.catalague-content3>li>a,
+      ul.catalague-content4>li>a,
+      ul.catalague-content5>li>a
+      {
+      height:35px;
+      font-size: 10px;
+    }
+      ul.catalague-content1>li>a:hover,
+      ul.catalague-content2>li>a:hover,
+      ul.catalague-content3>li>a:hover,
+      ul.catalague-content4>li>a:hover,
+      ul.catalague-content4>li>a:hover
+      {
+   text-decoration: underline;
+      }
+     ul.catalague-content2
+     {
+      left: 320px;
+     }
+     ul.catalague-content3
+     {
+      left: 550px;
+     }
+     ul.catalague-content4
+     {
+      left: 770px;
+     }
+      ul.catalague-content5
+     {
+      left: 970px;
+     } 
+     div.footer{
+      width: 1350px;
+      margin: 0 auto;
+      background-color:#ededed;
+     }
+     div.footer1,
+     div.footer2,
+     div.footer5
+
+     {
+      margin-left: 120px;
+      font-size: 12px;
+      color: #cccccc;
+     }
+     div.footer>.footer1>a{
+      color: blue;
+     }
+     div.footer>.footer1>a:hover{
+       text-decoration: underline;
+     }
+     .footers::after 
+     {
+      content: "";
+      display: block;
+      clear: both;
+    }
+    .footers {
+      width: 1350px;
+    }
+     div.footer2{
+      width:300px;
+      float: left;
+     }
+     .footer3 .link > li {
+      float:left;
+      width: 80px;
+      text-align: center;
+      border-right: 1px solid #ccc;
+      font-size: 12px;
+    }
+    .footer3 .link > li  a:hover,
+    .footer4:hover
+
+     {
+      text-decoration: underline;
+    }
+    .footer4
+    {
+      float: right;
+    }
+     .footer4>a
+     {
+      margin-right: 100px;
+      font-size: 12px;
+     }
+     div.footer5>a{
+      color: #cccccc;
+     }
+     div.footer5>a:hover{
+      text-decoration: underline;
+     }
+     hr{
+      color:#ffffff;
+     }
+    /* i{
+      color: #ffffff;
+     }*/
+	</style>
+</head>
+<body>
+	<div class="contenter">
+		<div class="ad">
+			<h2><广告></h2>
+		</div>
+		<div class="nav">
+			<ul>
+				<li><a href=""><i class="fa fa-apple"></i></a></li>
+				<li><a href="">Mac</a></li>
+				<li><a href="">ipad</a></li>
+				<li><a href="">iphone</a></li>
+				<li><a href="">watch</a></li>
+				<li><a href="">Music</a></li>
+				<li><a href="">技术支持</a></li>
+				<li><a href=""><i class="fa fa-search"></i></a></li>
+				<li><a href=""><i class="fa fa-shopping-bag"></i></a></li>
+			</ul>
+		</div>
+			<div class="iphonex">
+		<div class="iphonex-top">
+			<ul>
+				<li><a href="">iPhone</a></li>
+				<li><a href="">hello,未来。</a></li>
+			</ul>	
+		</div>
+		<div class="iphonex-body">
+			   	<ul>
+			   		<li><a href="">进一步了解</a>&nbsp&gt</li>
+			   		<li><a href="">购买 </a>&nbsp&gt</li>
+			   	</ul>
+		</div>
+		<div class="iphonex-footer">
+			   <a href="">	<img src="./images/iphone_x.jpg" alt="" width="1000px" height="200px"> </a>
+		</div>
+		    </div>
+		 <div class="ipad">
+		<div class="ipad-top">
+			<ul>
+				<li><a href="">iPad</a></li>
+				<li><a href="">这个电脑，拿掉了电脑的条条框框。</a></li>
+			</ul>	
+		</div>
+		<div class="ipad-body">
+			   	<ul>
+			   		<li><a href="">进一步了解</a>&nbsp&gt</li>
+			   		<li><a href="">购买 </a>&nbsp&gt</li>
+			   	</ul>
+		</div>
+		<div class="ipad-footer">
+			   <a href="">	<img src="./images/ipad.jpg" alt="" width="1000px" height="320px"> </a>
+		</div>
+		    </div>
+		 <div class="mac">
+		<div class="mac-top">
+			<ul>
+				<li><a href="">MacBook&nbspPro</a></li>
+				<li><a href="">更强劲，更专业的强劲。</a></li>
+			</ul>	
+		</div>
+		<div class="mac-body">
+			   	<ul>
+			   		<li><a href="">进一步了解</a>&nbsp&gt</li>
+			   		<li><a href="">购买 </a>&nbsp&gt</li>
+			   	</ul>
+		</div>
+		<div class="mac-footer">
+			   <a href="">	<img src="./images/2.png" alt="" width="1000px" height="320px"> </a>
+		</div>
+		    </div>
+        <div class="content">
+          <a href="" class="content-left1">
+        	<div class="content-left">	
+        		<ul>
+        			<li>暑假热点呈现</li>
+        			<li>为高校生活购买Mac或iPad,Beats搭<br>配其中</li>
+        		</ul>
+        	</div>
+        	</a>
+        	<a href="" class="content-right1">	
+        <div class="content-right">	
+        		<ul>
+        			<li>敬&nbspMac&nbsp背后的你</li>
+        		</ul>
+        	<div class="content-right2">
+        	       <ul>
+        	           <li><a href="">观看影片</a><i class="fa fa-play-circle"></i></li>
+        			   <li><a href="">探索&nbspMac</a>&nbsp&gt</li>
+        		  </ul>
+        	</div>
+        </div>
+
+       </div>
+        	</a>
+       <div class="content2">
+       	<div class="content2-left">
+       		   <ul>
+             			<li>激发你的强大</li>
+             			<li>iPhoneX配备A11仿生。</li>
+             			<li><a href="">观看影片</a><i class="fa fa-play-circle"></i></li>
+       		 	</ul>
+       	</div>
+       	<div class="content2-right">
+          <div class="content2-right1">
+            <ul>
+          <li><a href="">iPhone8</a></li>
+          <li><a href="">新一代iPhone。</a></li>
+           </ul> 
+          </div>
+          <div class="content2-right2">
+          <ul>
+            <li><a href="">进一步了解</a>&nbsp&gt</li>
+            <li><a href="">购买 </a>&nbsp&gt</li>
+          </ul>
+          </div>
+          <div class="content2-right3">
+          <img src="./images/3.jpg" alt=""></div>
+        </div>
+       </div>
+       <div class="content3">
+         <div class="content3-left">
+           <ul>
+             <li><a href="">iPhone 年年焕新计划</a></li>
+             <li>每年都有一部新iPhone,<br>并享受AppleCare+全方位服务计划。</li>
+           </ul>
+         </div>
+         <div class="content3-right">
+           <ul>
+             <li>三个圆环，圆一个目标。</li>
+             <li>了解如何填满Apple Watch的<br>健身记录圆环。</li>
+             <li> <img src="./images/5.jpg" alt=""></li>
+           </ul>
+        </div>
+       </div>
+       <div class="catalague">
+         <div class="catalague-bg">
+         <div class="catalague-content">
+           <ul class="catalague-content1">
+             <li><b>选购及了解</b></li>
+             <li><a href="">Mac</a></li>
+             <li><a href="">iPad</a></li>
+             <li><a href="">iPhone</a></li>
+             <li><a href="">Watch</a></li>
+             <li><a href="">Music</a></li>
+             <li><a href="">iTues</a></li>
+             <li><a href="">iPod touch</a></li>
+             <li><a href="">配件</a></li>
+             <li><a href="">App Store 充值卡</a></li>
+           </ul>
+            <ul class="catalague-content2">
+              <li><b>Apple Store 商店</b></li>
+              <li><b>查找零售店</b></li>
+              <li><a href="">Genius Bar 天才吧</a></li>
+              <li><a href="">Today at Apple</a></li>
+              <li><a href="">Apple 夏令营</a></li>
+              <li><a href="">Field Trip课外活动</a></li>
+              <li><a href="">App Store App</a></li>
+              <li><a href="">翻新和优惠</a></li>
+              <li><a href="">分期付款</a></li>
+              <li><a href="">Apple GiveBack 回馈计划</a></li>
+              <li><a href="">订单状态</a></li>
+              <li><a href="">选购帮助</a></li>
+            </ul>
+              <ul class="catalague-content3">
+                <li><b>教育应用</b></li>
+                <li><a href="">Apple 与教育</a></li>
+                <li><a href="">高校师生选购</a></li>
+                <li><b>商务应用</b></li>
+                  <li><a href="">Apple与商务</a></li>
+                  <li><a href="">商务选购</a></li>
+                </li>
+              </ul>
+              <ul class="catalague-content4">
+                <li><b>账户</b></li>
+                <li><a href="">管理你的Apple ID</a></li>
+                <li><a href="">Apple Store账户</a></li>
+                <li><a href="">iCloud.com</a></li>
+                <li><b>Apple 价值观</b></li>
+                <li><a href="">辅助功能</a></li>
+                <li><a href="">环境责任</a></li>
+                <li><a href="">隐私</a></li>
+                <li><a href="">供应商责任</a></li>
+              </ul>
+              <ul class="catalague-content5">
+                <li><b>关于 Apple</b></li>
+                <li><a href="">Newsroom</a></li>
+                <li><a href="">Apple管理层</a></li>
+                <li><a href="">工作机会</a></li>
+                <li><a href="">创造就业</a></li>
+                <li><a href="">活动</a></li>
+                <li><a href="">联系 Apple</a></li>
+              </ul>
+         </div>
+
+         </div>
+       </div>
+       <div class="footer">
+          <div class="footer1">更多选购方式：前往<a href="">Apple Store 零售店</a>，致电400-666-8800或查找在你附近的<a href="">授权经销商</a>。</div>
+        <hr>
+        <div class="footers">
+          <div class="footer2">Copyright © 2018 Apple Inc. 保留所有权利。</div>
+          <div class="footer3">
+            <ul class="link">
+              <li><a href="">隐私政策</a></li>
+              <li><a href="">使用条款</a></li>
+              <li><a href="">销售政策</a></li>
+              <li><a href="">法律信息</a></li>
+              <li><a href="">网站地图</a></li>
+            </ul>
+          </div>
+          <div class="footer4">
+           <a href="">中国</a> 
+          </div>
+        </div>
+        <div class="footer5">
+        京公安网安备 11010502008968 <a href="">京ICP备10214630</a></div>
+        </div>
+	</div>
+</body>
+</html>
